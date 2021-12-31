@@ -11,3 +11,36 @@ html {
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+.all {
+    max-width: 1200px;
+     margin: 0 auto;
+}
+.infor {
+    background-color: black;
+    width: 100%;
+    height: 20px;
+}
+.infor span {
+    color: white;
+}
+.infor__mation {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.socials {
+    /* margin-right: 10px; */
+
+}
+.socials a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .all {
+        width: 600px;
+        margin: 0;
+    }
+}
