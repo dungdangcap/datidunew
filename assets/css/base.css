@@ -40,7 +40,45 @@ html {
 }
 @media screen and (max-width: 600px) {
     .all {
-        width: 600px;
+        width: 100%;
         margin: 0;
+    }
+    .header {
+        display: block;
+    }
+    .header-suggest {
+        margin: 11px 20px;
+    }
+    .name-shop {
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    .search {
+        width: 100px;
+        margin-left: 19%;
+    }
+    .nav-list {
+        display: none
+    }
+    .nav-item__icon--repon {
+        display: block;
+    }
+    .menu-icon i {
+        transform: translate(340px, -91px);
+    }
+    .sale {
+        /* width:; */
+    }
+    .sale-decs {
+        margin: 26px 35px;
+        font-size: 16px;
+    }
+    .product {
+        margin-left: 20px;
+        width: 153px;
+        height: 250px;
+    }
+    .product-infor {
+        margin: 10px;
     }
 }
