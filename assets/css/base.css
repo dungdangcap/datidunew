@@ -44,6 +44,7 @@ html {
         margin: 0;
     }
     .header {
+        position: static;
         display: block;
     }
     .header-suggest {
@@ -52,6 +53,9 @@ html {
     .name-shop {
         margin-left: 30px;
         margin-bottom: 10px;
+    }
+    .name-shop a {
+        display: inline-block;
     }
     .search {
         width: 100px;
@@ -79,6 +83,27 @@ html {
         height: 250px;
     }
     .product-infor {
-        margin: 10px;
+        margin: 0 0 0 10px;
+    }
+    .infor__mation {
+        margin: 0 5px;
+    }
+    .name-suggest b:first-child {
+        transform: translate(-18px, 17px);
+    }
+    .name-suggest b:last-child {
+        transform: translate(17px, 17px);
+    }
+    .new-title h3 b:first-child {
+        transform: translate(-18px, 17px);
+    }
+    .new-title h3 b:last-child {
+        transform: translate(17px, 17px);
+    }
+    .size ul {
+        margin: 45% 0 0 0px;
+    }
+    .product-infor:hover ~ .size {
+        display: none;
     }
 }
