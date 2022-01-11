@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 --root {
+    --white-color: white;
     --text-color: #000000;
     --background-color: rgba(196, 196, 196, 0.6);
 }
@@ -117,5 +118,20 @@ html {
     }
     .product-infor:hover ~ .size {
         display: none;
+    }
+    .footer {
+        height: 100%;
+        padding: 0 0 30px 0;
+    }
+    .footer-flex {
+        flex-wrap: wrap;
+    }
+    .footer-content {
+        margin-left: 50px;
+    }
+    .footer-copy {
+        margin: 25px 0 0 0;
+        padding-top: 3px;
+        height: 5%;
     }
 }
