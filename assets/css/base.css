@@ -3,14 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 --root {
     --white-color: white;
     --text-color: #000000;
     --background-color: rgba(196, 196, 196, 0.6);
 }
 html {
+    scrollbar-width: none;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
+}
+.all::--webkit-scrollbar {
+    display: none;
 }
 .all {
     /* max-width: 1200px;
@@ -133,5 +138,11 @@ html {
         margin: 25px 0 0 0;
         padding-top: 3px;
         height: 5%;
+    }
+    .menu-list--active {
+        border-left: 10px solid rgb(143, 143, 143);
+    }
+    .hidden {
+        display: block;
     }
 }
