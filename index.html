@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datidu</title>
+    <title>DATIDU - Shop giày chất lượng của cộng tác viên.</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/font,icon/fontawesome-free-6.0.0-beta2-web/css/all.min.css">
     <link rel="shortcut icon" href="./assets/img/logo.jpg" type="image/x-icon">
@@ -33,37 +38,37 @@
             </label>
             <div class="user"></div>
             <ul class="menu-list">
-                <li>
+                <li class="menu-list__item">
                     <a href="index.html" class="menu-list--active">
                         <i class="fas fa-home"></i>
                         Trang chủ
                     </a>
                 </li>
-                <li class="hidden">
+                <li class="menu-list__item hidden">
                     <a href="#">
                         <i class="fas fa-user"></i>
                         Tài khoản
                     </a>
                 </li>
-                <li>
+                <li class="menu-list__item">
                     <a href="product.html">
                         <i class='bx bxs-dashboard'></i>
                         Sản phẩm
                     </a>
                 </li>
-                <li>
+                <li class="menu-list__item">
                     <a href="#">
                         <i class="fas fa-headset"></i>
                         Liên hệ
                     </a>
                 </li>  
-                <li>
+                <li class="menu-list__item">
                     <a href="#">
                         <i class="fas fa-question-circle"></i>
                         Trợ giúp
                     </a>
                 </li>
-                <li>
+                <li class="menu-list__item">
                     <a href="#">
                         <i class="fas fa-info-circle"></i>
                         Giới thiệu
@@ -85,71 +90,30 @@
                 <input type="text" placeholder="Tìm kiếm">
                 <i class="search-icon fas fa-search"></i>
             </div>
-            <ul class="nav-list">
+            <div class="nav-list">
                 <li class="nav-item"></li>
-                <li class="nav-item">
+                <div class="nav-item">
                     <i class="nav-item__icon fas fa-user"></i>
                     Tài khoản
-                </li>
-                <li class="nav-item">
+                </div>
+                <div class="nav-item">
                     <i class="nav-item__icon fas fa-question-circle"></i>
                     Trợ giúp
-                </li>
-                <li class="nav-item">
+                </div>
+                <div class="nav-item">
                     <i class="nav-item__icon fas fa-shopping-cart"></i>
                     Giỏ hàng
-                </li>
-            </ul>
+                    <!-- <div class="cart">
+                        <img src="./assets/img/no-cart.png" alt="" class="no-cart">
+                    </div> -->
+                </div>
+            </div>
             <label for="sidebar" class="menu-icon">
                 <i class="gg-menu-right" style="top: 18px;"></i>
             </label>
         </div>
-        <!-- <input type="checkbox" name="" id="sidebar" class="navbar">
-        <label for="sidebar" class="overlay"></label>
-        <div class="menu">
-            <label for="sidebar" class="menu--icon">
-                <i class="menu--icon far fa-times-circle"></i>
-            </label>
-            <ul class="menu-list">
-                <li>
-                    <a href="index.html" class="menu-list--active">
-                        <i class="fas fa-home"></i>
-                        Trang chủ
-                    </a>
-                </li>
-                <li class="hidden">
-                    <a href="#">
-                        <i class="fas fa-user"></i>
-                        Tài khoản
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html">
-                        <i class='bx bxs-dashboard'></i>
-                        Danh mục sản phẩm
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-headset"></i>
-                        Liên hệ
-                    </a>
-                </li>  
-                <li>
-                    <a href="#">
-                        <i class="fas fa-question-circle"></i>
-                        Trợ giúp
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-info-circle"></i>
-                        Giới thiệu
-                    </a>
-                </li>                    
-            </ul>
-        </div> -->
         <div class="sale">
+            <div class="banner"></div>
             <h3 class="sale-decs">Giảm giá 30% nhân ngày khai trương Web</h3>
         </div>
         <div class="container">
@@ -196,7 +160,7 @@
                         <div for="rating" class="img">                     
                             <img src="./assets/img/adidassuperstar.jpg" alt="" class="product-img">
                             <label for="rating1" class="product-icon">
-                                <input class="rate" type="checkbox" style="display: none;" name="" id="rating1">
+                                <input class="rate" type="checkbox" style="display: none; border: none;outline: none;" name="" id="rating1">
                                 <div for="rating" class="rating-1">
                                     <i class='bx bx-star'></i>
                                 </div>
@@ -318,6 +282,34 @@
                     <div class="product">
                         <div class="img">                     
                             <img src="./assets/img/nikenew1.jpg" alt="" class="product-img">
+                            <label for="rating5" class="product-icon">
+                                <input class="rate" type="checkbox" style="display: none;" name="" id="rating5">
+                                <div for="rating" class="rating-1">
+                                    <i class='bx bx-star'></i>
+                                </div>
+                                <div class="rating-2">
+                                    <i class="fas fa-star" style="color: tomato;font-size: 19px;"></i>
+                                </div>
+                            </label>
+                            <div class="size">
+                                <ul>
+                                    <li>40</li>
+                                    <li>41</li>
+                                    <li>42</li>
+                                    <li>43</li>
+                                    <li>44</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-infor">
+                            <h3 class="product-name">Air Force 1</h4>
+                            <p class="product-decs">Gym Low Redwhite</p>
+                            <p class="product-price">550.000 đ</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="img">                     
+                            <img src="./assets/img/nikenew4.jpg" alt="" class="product-img">
                             <label for="rating5" class="product-icon">
                                 <input class="rate" type="checkbox" style="display: none;" name="" id="rating5">
                                 <div for="rating" class="rating-1">
@@ -480,6 +472,7 @@
                         <li>MLB</li>
                         <li>Vans</li>
                         <li>Converse</li>
+                        <li>Khác</li>
                     </ul>
                 </div>
                 <div class="footer-content">
@@ -518,5 +511,19 @@
     <!-- <div class="thongbao">
         <p>Trang web hiện đang được hoàn thiện. Nếu quý khách có nhu cầu có thể gửi mẫu <a href="https://m.me/DungDangTienA7">tại đây</a></p>
     </div> -->
+    <!-- script -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./assets/main.js"></script>
 </body>
 </html>
