@@ -79,6 +79,31 @@ html {
     top: 50%;
     transform: translateY(-50%);
 }
+/* all */
+.product--all {
+    /* background-color: transparent; */
+    /* position: relative; */
+}
+.seeall {
+    position: relative;
+    width: 100%;
+    height: 357px;
+    /* background-color: red; */
+    text-align: center;
+}
+.seeall p {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    left: 50%;
+    font-size: 25px;
+}
+.seeall i {
+    line-height: 310px;
+    text-align: center;
+    font-size: 25px;
+}
 @media screen and (max-width: 600px) {
     .all {
         width: 100%;

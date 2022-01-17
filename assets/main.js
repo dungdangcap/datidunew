@@ -1,7 +1,8 @@
 $(document).ready(function () {
-    $(".suggest-product, .new-product").slick({
+    $(".container-product__content").slick({
         slidesToShow: 4,
-        // slidesToScroll: 2,
+        slidesToScroll: 2,
+        infinite: false,
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         responsive: [
@@ -10,7 +11,7 @@ $(document).ready(function () {
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
-                infinite: true,
+                infinite: false,
                 dots: true
               }
             },
